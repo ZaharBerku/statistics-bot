@@ -1,0 +1,30 @@
+{
+  "name": "test-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/app.js",
+    "dev": "nodemon --watch 'src/app.ts' --exec 'tsc && node ./dist/app.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^22.7.8",
+    "eslint": "^9.12.0",
+    "globals": "^15.11.0",
+    "nodemon": "^3.1.7",
+    "typescript-eslint": "^8.8.1"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "dotenv": "^16.4.5",
+    "telegraf": "^4.16.3",
+    "telegraf-session-local": "^2.1.1",
+    "typescript": "^5.6.3"
+  }
+}
